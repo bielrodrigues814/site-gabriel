@@ -281,6 +281,59 @@
 
     </section><!-- /Skills Section -->
 
+    <!-- Contato-->
+
+    <div class="contact-section" style="padding: 20px; background: #f8f9fa; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); margin-top: 20px; max-width: 100%; box-sizing: border-box;">
+      <h2 style="text-align: center; color: #333;">Contato</h2>
+  
+      <div style="display: flex; align-items: center; margin: 10px 0;">
+          <img src="https://static.vecteezy.com/system/resources/previews/009/995/712/large_2x/3d-whatsapp-logo-icon-green-color-free-png.png" alt="WhatsApp Icon" style="width: 40px; height: 40px; margin-right: 10px;">
+          <a href="https://wa.me/5511951377355" target="_blank" style="color: #333; text-decoration: none; font-size: 16px;">(11) 95137-7355</a>
+      </div>
+  
+      <div style="display: flex; align-items: center; margin: 10px 0;">
+          <img src="https://static.vecteezy.com/system/resources/previews/016/716/465/non_2x/gmail-icon-free-png.png" alt="Gmail Icon" style="width: 40px; height: 40px; margin-right: 10px;">
+          <a href="mailto:gabrielrodriguesm536@gmail.com" style="color: #333; text-decoration: none; font-size: 16px;">gabrielrodriguesm536@gmail.com</a>
+      </div>
+  
+      <div style="display: flex; align-items: center; margin: 10px 0;">
+          <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" alt="GitHub Icon" style="width: 40px; height: 40px; margin-right: 10px;">
+          <a href="https://github.com/bielrodrigues814" target="_blank" style="color: #333; text-decoration: none; font-size: 16px;">bielrodrigues814</a>
+      </div>
+  
+      <div style="display: flex; align-items: center; margin: 10px 0;">
+          <img src="https://th.bing.com/th/id/OIP.lECad1wC12WN1ue6iEKbYwHaHk?rs=1&pid=ImgDetMain" alt="Instagram Icon" style="width: 40px; height: 40px; margin-right: 10px;">
+          <a href="https://www.instagram.com/biel__rodrigues01/" target="_blank" style="color: #333; text-decoration: none; font-size: 16px;">biel__rodrigues01</a>
+      </div>
+  
+      <div style="margin-top: 10px;">
+          <strong>Localização:</strong>
+          <span style="font-size: 16px; color: #555;">São Paulo, CEP: 08485-442, Barão Carvalho do Amparo</span>
+      </div>
+  </div>
+  
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const images = [
+              "https://play-lh.googleusercontent.com/RtNN_ny-8YJb9jpvdxkmG3Cc7gGep-kKCJxPOJOj-W6uk7SqLge2UsgZXFn25-APAhH2",
+              "https://www.nichepursuits.com/wp-content/uploads/2023/07/Ideas-For-Catchy-Pizzeria-Names.jpg",
+              "https://cdn.imgbin.com/18/12/19/imgbin-mod-pizza-llc-calzone-delivery-logo-pizza-a9eUE310YzwwzzADXsEzvAgjb.jpg"
+          ];
+          
+          let index = 0;
+          const imgElement = document.getElementById("pizzaImage");
+          
+          function changeImage() {
+              index = (index + 1) % images.length;
+              imgElement.src = images[index];
+          }
+          
+          setInterval(changeImage, 3000);
+      });
+  </script>
+  
+<!-- final do contato-->
+
     <!-- Resume Section -->
     <section id="resume" class="resume section">
 
@@ -302,11 +355,7 @@
             <div class="resume-item pb-0">
               <h4>Objetivo:</h4>
               <p><em>"gostaria de fazer parte da equipe de funcionários da empresa, tendo o objetivo de crescer profissionalmente e de maneira produtiva,além de contribuir para o desenvolvimento da organização como um todo"</em></p>
-              <ul>
-                <li>São Paulo,BRASIL</li>
-                <li>+55 11 951377355 </li>
-                <li>Gabrielrodriguesm536@gmail.com</li>
-              </ul>
+             
             </div><!-- Edn Resume Item -->
 
             <h3 class="resume-title">Educação</h3>
@@ -381,37 +430,139 @@
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title"><a href="  https://bielrodrigues814.github.io/LifeTools/" class="stretched-link">LifeTools</a></h4>
-              <p class="description">LifeTools é um aplicativo multifuncional que simplifica a sua rotina, oferecendo ferramentas práticas como calculadoras, listas de tarefas e muito mais. Com uma interface intuitiva e moderna, ele ajuda você a gerenciar seu tempo e aumentar a produtividade de forma eficiente. O LifeTools é a solução ideal para quem busca praticidade e organização no dia a dia.</p>
+            <div class="icon flex-shrink-0">
+                <a href="https://bielrodrigues814.github.io/LifeTools/" target="_blank">
+                    <i class="bi bi-box-arrow-up-right"></i> <!-- Ícone de link externo -->
+                </a>
             </div>
-          </div>
-          <!-- End Service Item -->
+            <div>
+                <img id="lifetools-image" src="https://us.123rf.com/450wm/shtanzman/shtanzman1210/shtanzman121000019/15701398-telefone-inteligente-m%C3%B3vel-com-aplicativos-de-software-%C3%ADcones-3d.jpg" 
+                     alt="Capa LifeTools" class="img-fluid mb-3" style="width: 100%; border-radius: 10px;">
+                <h4 class="title">LifeTools</h4>
+                <p class="description">
+                    LifeTools é um aplicativo multifuncional que simplifica a sua rotina, oferecendo ferramentas práticas como calculadoras, listas de tarefas e muito mais. 
+                    Com uma interface intuitiva e moderna, ele ajuda você a gerenciar seu tempo e aumentar a produtividade de forma eficiente. 
+                    O LifeTools é a solução ideal para quem busca praticidade e organização no dia a dia.
+                </p>
+            </div>
+        </div>
+        
+              <!--separaçao -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <!-- End Service Item -->
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200" style="position: relative;">
             <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
             <div>
-              <h4 class="title"><a href="https://jogoabertonews.com.br/" class="stretched-link">Jogo Aberto . News</a></h4>
-              <p class="description">"JogoAbertoNews.com.br é o seu portal de notícias de futebol, trazendo as últimas atualizações, análises e informações exclusivas sobre o universo do esporte. Com uma abordagem dinâmica e especializada, nosso site oferece conteúdo de qualidade para os apaixonados por futebol, mantendo você sempre bem informado sobre tudo o que acontece dentro e fora de campo."</p>
+                <div style="position: relative; display: inline-block; width: 100%;">
+                    <img id="dynamicImage" src="https://static.vecteezy.com/ti/vetor-gratis/t2/1330144-realista-futebol-ou-futebol-na-rede-com-copia-espaco-gratis-vetor.jpg" 
+                         alt="Capa Jogo Aberto News" class="img-fluid mb-3" 
+                         style="width: 100%; border-radius: 10px; display: block;">
+                    
+                    <a href="https://jogoabertonews.com.br/" class="stretched-link link-icon" 
+                       style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                              opacity: 0; transition: opacity 0.3s ease-in-out;">
+                        <img src="https://flyclipart.com/thumb2/link-icon-172190.png" alt="Link" 
+                             style="width: 50px; height: 50px;">
+                    </a>
+                </div>
+                <h4 class="title"><a href="https://jogoabertonews.com.br/" class="stretched-link">Jogo Aberto . News</a></h4>
+                <p class="description">"JogoAbertoNews.com.br é o seu portal de notícias de futebol, trazendo as últimas atualizações, análises e informações exclusivas sobre o universo do esporte. Com uma abordagem dinâmica e especializada, nosso site oferece conteúdo de qualidade para os apaixonados por futebol, mantendo você sempre bem informado sobre tudo o que acontece dentro e fora de campo."</p>
             </div>
-          </div><!-- End Service Item -->
+        </div>
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-          </div><!-- End Service Item -->
+        <script>
+          const images = [
+              "https://th.bing.com/th/id/OIP.Pjnlf081v4zRY5lwKq1dcQHaHa?rs=1&pid=ImgDetMain",
+              "https://png.pngtree.com/back_origin_pic/03/95/67/650e031c1fa64b067b850ab8ca346033.jpg",
+              "https://png.pngtree.com/back_origin_pic/03/95/67/650e031c1fa64b067b850ab8ca346033.jpg"
+          ];
+          
+          let index = 0;
+          function changeImage() {
+              index = (index + 1) % images.length;
+              document.getElementById("dynamicImage").src = images[index];
+          }
+          
+          setInterval(changeImage, 3000);
+      </script>
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-          </div><!-- End Service Item -->
+                      <!--separaçao -->
+          
+                      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300" style="position: relative;">
+                        <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+                        <div>
+                            <div style="position: relative; display: inline-block; width: 100%;">
+                                <img id="dynamicImageCurriculo" src="https://png.pngtree.com/element_origin_min_pic/16/12/21/181aa00fe66d0d3060203a2d5909c0d2.jpg" 
+                                     alt="Capa Curriculo Fácil PDF" class="img-fluid mb-3" 
+                                     style="width: 100%; border-radius: 10px; display: block;">
+                                
+                                <a href="https://bielrodrigues814.github.io/CurriculoF-cilPDF/" class="stretched-link link-icon" 
+                                   style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                                          opacity: 0; transition: opacity 0.3s ease-in-out;">
+                                    <img src="https://flyclipart.com/thumb2/link-icon-172190.png" alt="Link" 
+                                         style="width: 50px; height: 50px;">
+                                </a>
+                            </div>
+                            <h4 class="title"><a href="https://bielrodrigues814.github.io/CurriculoF-cilPDF/" class="stretched-link">Curriculo Fácil PDF</a></h4>
+                            <p class="description">"Este projeto é um Gerador de Currículos Online, desenvolvido com HTML, CSS e JavaScript, criado para ajudar profissionais a estruturarem e personalizarem seus currículos de forma prática e eficiente."</p>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        const imagesCurriculo = [
+                            "https://th.bing.com/th/id/OIP.dweeRgW321r5Dl0XyQYeBQHaHa?w=1500&h=1500&rs=1&pid=ImgDetMain",
+                            "https://png.pngtree.com/element_our/20190529/ourlarge/pngtree-cartoon-blue-resume-free-illustration-image_1202621.jpg",
+                            "https://img.pikbest.com/origin/09/28/13/70tpIkbEsT3DR.png!w700wp"
+                        ];
+                        
+                        let indexCurriculo = 0;
+                        function changeImageCurriculo() {
+                            indexCurriculo = (indexCurriculo + 1) % imagesCurriculo.length;
+                            document.getElementById("dynamicImageCurriculo").src = imagesCurriculo[indexCurriculo];
+                        }
+                        
+                        setInterval(changeImageCurriculo, 3000);
+                    </script><!-- End Service Item -->
+
+                    <!-- Separação-->
+
+
+             
+          
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                      <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+                      <div>
+                          <a href="https://tvm-dev.github.io/pizza-cfcct/" target="_blank" style="display: block;">
+                              <img id="pizzaImage" src="https://img.freepik.com/fotos-gratis/flat-leigos-pizza-em-uma-caixa-com-calculadora_23-2148247948.jpg" 
+                                   alt="Capa Pizza Split" class="img-fluid mb-3" 
+                                   style="width: 100%; border-radius: 10px; display: block;">
+                          </a>
+                          <h4 class="title">Pizza Split</h4>
+                          <p class="description">O Pizza Split é a solução definitiva para dividir o valor da pizza de forma justa e precisa. Com nossa calculadora inteligente, você pode calcular automaticamente quanto cada pessoa deve pagar, considerando diferentes situações, como taxas, gorjetas e até mesmo a divisão proporcional por consumo.</p>
+                      </div>
+                  </div>
+                  
+                  <script>
+                      document.addEventListener("DOMContentLoaded", function() {
+                          const images = [
+                              "https://play-lh.googleusercontent.com/RtNN_ny-8YJb9jpvdxkmG3Cc7gGep-kKCJxPOJOj-W6uk7SqLge2UsgZXFn25-APAhH2",
+                              "https://www.nichepursuits.com/wp-content/uploads/2023/07/Ideas-For-Catchy-Pizzeria-Names.jpg",
+                              "https://cdn.imgbin.com/18/12/19/imgbin-mod-pizza-llc-calzone-delivery-logo-pizza-a9eUE310YzwwzzADXsEzvAgjb.jpg"
+                          ];
+                          
+                          let index = 0;
+                          const imgElement = document.getElementById("pizzaImage");
+                          
+                          function changeImage() {
+                              index = (index + 1) % images.length;
+                              imgElement.src = images[index];
+                          }
+                          
+                          setInterval(changeImage, 3000);
+                      });
+                  </script><!-- End Service Item -->
+
+                               <!--separaçao -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
             <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
@@ -438,22 +589,7 @@
     
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
+  
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -476,6 +612,41 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+
+
+<script>
+  const images = [
+      "https://us.123rf.com/450wm/shtanzman/shtanzman1210/shtanzman121000019/15701398-telefone-inteligente-m%C3%B3vel-com-aplicativos-de-software-%C3%ADcones-3d.jpg",
+      "https://w7.pngwing.com/pngs/124/394/png-transparent-of-smartphone-and-app-icons-mobile-app-development-application-software-installation-app-store-optimization-mobile-application-electronics-gadget-web-design.png",
+      "https://e7.pngegg.com/pngimages/365/794/png-clipart-digital-marketing-web-design-brochure-user-experience-design-smartphone-gadget-electronics.png",
+      "https://w7.pngwing.com/pngs/72/638/png-transparent-mobile-app-development-android-web-application-android-gadget-electronics-mobile-phone.png"
+  ];
+  
+  let currentIndex = 0;
+  const imageElement = document.getElementById("lifetools-image");
+  
+  setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      imageElement.src = images[currentIndex];
+  }, 3000);
+</script>
+
+<footer id="footer" class="footer position-relative light-background">
+
+  <div class="container">
+    <div class="copyright text-center ">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you've purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+
+</footer>
   
 
 </body>
